@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API cep</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+    
+    <form method="get" action=".">
+        <label>Cep:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);" /></label><br />
+
+
+        
+        <p id="rua"></p>
+
+        
+        <p id="bairro"></p>
+
+
+        
+            <label class = "hide" >
+            <input class = "hide" name="cidade" type="text" id="cidade" size="40" /></label><br />
+            <label class = "hide">
+            <input class = "hide" name="uf" type="text" id="uf" size="2" /></label><br />
+            <label class = "hide">
+            <input class = "hide" name="ibge" type="text" id="ibge" size="8" /></label><br />
+
+        <p>Aperta tecla TAb para aceitar</p>
+        <p>Formato xxxxx-xxx</p>
+      </form>
+
+        
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
